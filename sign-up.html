@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="signup-form">
+        <h2>Sign Up</h2>
+        <input type="email" id="signup-email" placeholder="Email">
+        <input type="password" id="signup-password" placeholder="Password">
+        <button onclick="signup()">Sign Up</button>
+      </div>
+       <!-- Add this to your HTML file -->
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+
+<script>
+  // Initialize Firebase
+  var firebaseConfig = {
+    apiKey: "AIzaSyAcfH_jHdajqQXYDULwpb0fsR4qHiU2NiE",
+    authDomain: "multipurpos-4e9cb.firebaseapp.com",
+    projectId: "multipurpos-4e9cb",
+    storageBucket: "multipurpos-4e9cb.appspot.com",
+    messagingSenderId: "372732575325",
+    appId: "1:372732575325:web:c6662aa80bf63063bf17b4",
+    measurementId: "G-LDXEMN8CT7"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+</script>
+      <script src="app.js"></script>
+</body>
+</html>
